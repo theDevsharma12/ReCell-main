@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>ReCell : Contact Us </title>
+    <link rel="stylesheet" href="css/contactus.css" />
+    <link href="images/ce-logo-titlebar.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="images/ce-logo-titlebar.png" rel="apple-touch-icon"/>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body
+    class="body"
+    data-new-gr-c-s-check-loaded="14.1162.0"
+    data-gr-ext-installed=""
+    cz-shortcut-listen="true"
+  >
+    <div class="page-wrapper">
+      <div class="global-styles w-embed">
+        <style>
+          /* Make text look crisper and more legible in all browsers */
+          body {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+          }
+
+          /* Focus state style for keyboard navigation for the focusable elements */
+          *[tabindex]:focus-visible,
+          input[type="file"]:focus-visible {
+            outline: 0.125rem solid #4d65ff;
+            outline-offset: 0.125rem;
+          }
+
+          /* Get rid of top margin on first element in any rich text element */
+          .w-richtext > :not(div):first-child,
+          .w-richtext > div:first-child > :first-child {
+            margin-top: 0 !important;
+          }
+
+          /* Get rid of bottom margin on last element in any rich text element */
+          .w-richtext > :last-child,
+          .w-richtext ol li:last-child,
+          .w-richtext ul li:last-child {
+            margin-bottom: 0 !important;
+          }
+
+          /* Prevent all click and hover interaction with an element */
+          .pointer-events-off {
+            pointer-events: none;
+          }
+
+          /* Enables all click and hover interaction with an element */
+          .pointer-events-on {
+            pointer-events: auto;
+          }
+
+          /* Create a class of .div-square which maintains a 1:1 dimension of a div */
+          .div-square::after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+          }
+
+          /* Make sure containers never lose their center alignment */
+          .container-medium,
+          .container-small,
+          .container-large {
+            margin-right: auto !important;
+            margin-left: auto !important;
+          }
+
+          /* Apply "..." after 3 lines of text */
+          .text-style-3lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+
+          /* Apply "..." after 2 lines of text */
+          .text-style-2lines {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          /* Adds inline flex display */
+          .display-inlineflex {
+            display: inline-flex;
+          }
+
+          /* These classes are never overwritten */
+          .hide {
+            display: none !important;
+          }
+
+          @media screen and (max-width: 991px) {
+            .hide,
+            .hide-tablet {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 767px) {
+            .hide-mobile-landscape {
+              display: none !important;
+            }
+          }
+          @media screen and (max-width: 479px) {
+            .hide-mobile {
+              display: none !important;
+            }
+          }
+
+          .margin-0 {
+            margin: 0rem !important;
+          }
+
+          .padding-0 {
+            padding: 0rem !important;
+          }
+
+          .spacing-clean {
+            padding: 0rem !important;
+            margin: 0rem !important;
+          }
+
+          .margin-top {
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-top {
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-right {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-right {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-bottom {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-bottom {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          .margin-left {
+            margin-top: 0rem !important;
+            margin-right: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+
+          .padding-left {
+            padding-top: 0rem !important;
+            padding-right: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+
+          .margin-horizontal {
+            margin-top: 0rem !important;
+            margin-bottom: 0rem !important;
+          }
+
+          .padding-horizontal {
+            padding-top: 0rem !important;
+            padding-bottom: 0rem !important;
+          }
+
+          .margin-vertical {
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+          }
+
+          .padding-vertical {
+            padding-right: 0rem !important;
+            padding-left: 0rem !important;
+          }
+
+          /* Fluid Responsive */
+          body {
+            min-height: 0vw;
+            font-size: calc(0.5357142857142858vw + 0.5178571428571429em);
+          }
+
+          /* Min Font Size */
+          @media screen and (max-width: 991px) {
+            body {
+              font-size: 0.875em;
+            }
+          }
+
+          /* Animate Line */
+          :root {
+            --animate-line-color: #efeae3;
+            --animate-line-speed: 0.2s;
+            --animate-line-ease: cubic-bezier(0.12, 0, 0.39, 0);
+          }
+          .animate-line {
+            display: inline-block;
+            position: relative;
+            overflow-x: hidden;
+          }
+          .animate-line::after {
+            pointer-events: none;
+            background-color: var(--animate-line-color);
+            content: "";
+            height: 1.5px;
+            position: absolute;
+            left: auto;
+            top: auto;
+            right: 0%;
+            bottom: 0%;
+            width: 0%;
+            transition: width var(--animate-line-ease) var(--animate-line-speed);
+          }
+          .animate-line:hover::after {
+            width: 100%;
+            right: auto;
+            left: 0%;
+          }
+
+          .animate-line.color-type-2 {
+            --animate-line-color: #0b0500;
+          }
+
+          /* Custom pointer */
+          .pointer---wrap {
+            pointer-events: none;
+          }
+        </style>
+
+        <style>
+          @media screen and (min-width: 992px) {
+            /* Animate Circle */
+            :root {
+              --circle-btn-bg: #fff1e6;
+              --circle-btn-text: #000;
+              --circle-btn-speed: 0.3s;
+              --circle-btn-half-speed: 0.15s;
+              --circle-ease-out: cubic-bezier(0.61, 1, 0.88, 1);
+              --circle-ease-in: cubic-bezier(0.12, 0, 0.39, 0);
+            }
+            .reveal-circle {
+              position: relative;
+              overflow: hidden;
+              -webkit-mask-image: -webkit-radial-gradient(white, black);
+            }
+            .reveal-circle:hover {
+              color: var(--circle-btn-text);
+              background-color: var(--circle-btn-bg);
+              transition: background-color 0s linear var(--circle-btn-speed);
+            }
+            .reveal-circle::after {
+              pointer-events: none;
+              background-color: var(--circle-btn-bg);
+              transform: translateY(5em);
+              content: "";
+              z-index: -1;
+              position: absolute;
+              width: 100%;
+              padding-top: 100%;
+              left: 0%;
+              top: 0%;
+              right: 0%;
+              bottom: auto;
+              border-radius: 50%;
+              transition: border-radius var(--circle-btn-half-speed)
+                  var(--circle-ease-in) 0s,
+                transform var(--circle-btn-speed) var(--circle-ease-in);
+            }
+            .reveal-circle:hover::after {
+              border-radius: 0%;
+              transform: translateY(0em);
+              transition: border-radius var(--circle-btn-half-speed)
+                  var(--circle-ease-out) var (--circle-btn-half-speed),
+                transform var(--circle-btn-speed) var(--circle-ease-out);
+            }
+
+            .reveal-circle.color-type-2 {
+              --circle-btn-bg: #efeae3;
+              --circle-btn-text: #0b0500;
+            }
+          }
+          .heading-style-h4 {
+              margin: 0;
+            }
+            ::placeholder {
+               color: #fff!important;
+            }
+        </style>
+      </div>
+
+      <div
+        data-animation="default"
+        class="header w-nav"
+        data-easing2="ease-in"
+        fs-scrolldisable-element="smart-nav"
+        data-easing="ease-out"
+        data-collapse="small"
+        data-w-id="489064cb-9577-b618-a8e4-54da4629fd67"
+        role="banner"
+        data-duration="400"
+      >
+        <div class="header_container">
+          <a href="/" aria-current="page" class="header_logo-link w-nav-brand w--current" aria-label="home"><img src="./images/logo.png" loading="lazy" class="header_logo" style=""></a>
+          <nav role="navigation" class="header_menu w-nav-menu" style="transform: translateY(0px) translateX(0px);">
+                            <a href="https://recell.in/" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Home</div></a>
+                            <a href="/about" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">About Us</div></a>  
+                            <a href="/ourprocess" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Our Process</div></a>        
+                            <a href="/products" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Products</div></a>        
+                            <a href="/category" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Newsroom</div></a>
+                            <a href="/contact" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Contact Us</div></a>
+                        </nav>
+
+          <div
+            fs-scrolldisable-element="toggle"
+            class="header_menu-button w-nav-button"
+            style="-webkit-user-select: text"
+            aria-label="menu"
+            role="button"
+            tabindex="0"
+            aria-controls="w-nav-overlay-0"
+            aria-haspopup="menu"
+            aria-expanded="false"
+          >
+            <div class="menu_link">
+              <div class="menu-icon">
+                <div class="menu-icon_line-top"></div>
+                <div class="menu-icon_line-bottom"></div>
+              </div>
+              <div class="menu_link_text">Menu</div>
+            </div>
+          </div>
+        </div>
+        <div class="header_overlay"></div>
+        <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+      </div>
+      <main class="main-wrapper">
+        <!-- <h1 class="contact-heading">Contact us</h1> -->
+        <section class="contact_section">
+          
+          <section class="contact_section">
+            <div class="container">
+              <div class="contact_wrapper">
+                <div>
+
+                  <div class="map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0819741980144!2d75.83379219999999!3d26.8373449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db623c61d13b9%3A0xe3be891ea7fb172d!2sJtm%20Mall%2C%20Model%20Town%2C%20Jagatpura%2C%20Jaipur%2C%20Rajasthan%20302017!5e0!3m2!1sen!2sin!4v1714120016658!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="content_wrapper">
+                  <div class="contact_content">
+                    <div class="heading_wrap">
+                      <h1
+                        data-w-id="2df42a85-0274-06a1-2caa-21263af942a5"
+                        style="
+                          transform: translate3d(0px, 0%, 0px)
+                            scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                            rotateZ(0deg) skew(0deg, 0deg);
+                          transform-style: preserve-3d;
+                        "
+                        class="contact_heading-1"
+                      >
+                        let's talk
+                      </h1>
+                    </div>
+                    <div class="heading_wrap">
+                      <h1
+                        data-w-id="075545f0-e48b-1949-8279-20169f4b8d40"
+                        style="
+                          transform: translate3d(0px, 0%, 0px)
+                            scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                            rotateZ(0deg) skew(0deg, 0deg);
+                          transform-style: preserve-3d;
+                        "
+                        class="contact_heading-2"
+                      >
+                        future
+                      </h1>
+                    </div>
+                  
+                    <div
+                      data-w-id="3f0509ab-4c14-a874-d63c-6f5e2aa34bff"
+                      style="opacity: 1"
+                      class="contact-gradient-wrapper"
+                    >
+                      <div class="who-shapes-wrapper">
+                        <div
+                          style="
+                            transform: translate3d(2.7445%, -3.8423%, 0px)
+                              scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                              rotateZ(0deg) skew(0deg, 0deg);
+                            transform-style: preserve-3d;
+                            will-change: transform;
+                          "
+                          class="who-shape-2"
+                        ></div>
+                        <div
+                          style="
+                            transform: translate3d(0.5489%, -2.47005%, 0px)
+                              scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                              rotateZ(0deg) skew(0deg, 0deg);
+                            transform-style: preserve-3d;
+                            will-change: transform;
+                          "
+                          class="who-shape-1"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact_points">
+                    <div
+                      data-w-id="780020fa-1ade-f99d-bc6c-25d020158dc1"
+                      style="opacity: 1"
+                      class="heading-style-h4"
+                    >
+                    Let's Transform E-waste 
+                    </div>
+                    <div
+                      data-w-id="a8296101-f5be-d9b4-b845-5a6a897e2b38"
+                      style="
+                        transform: translate3d(0px, 0px, 0px)
+                          scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                          rotateZ(0deg) skew(0deg, 0deg);
+                        transform-style: preserve-3d;
+                      "
+                      class="line"
+                    ></div>
+                    <div
+                      data-w-id="182dfed7-cc10-fd19-6f8d-c103263c7725"
+                      style="opacity: 1"
+                      class="heading-style-h4"
+                    >
+                    Recycling Together for
+                    </div>
+                    <div
+                      data-w-id="5c5dd414-5310-069b-d87b-884fb76edf4d"
+                      style="
+                        transform: translate3d(0px, 0px, 0px)
+                          scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                          rotateZ(0deg) skew(0deg, 0deg);
+                        transform-style: preserve-3d;
+                      "
+                      class="line"
+                    ></div>
+                    <div
+                      data-w-id="cb2c5d14-49bb-25f5-def1-b8c539429dc9"
+                      style="opacity: 1"
+                      class="heading-style-h4"
+                    >
+                    a Greener Future
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="container">
+            <div class="contact_wrapper-1">
+
+              <div class="contact-section">
+                <div class="">
+                  <div class="screen">
+                    <div class="screen-header">
+                      <div class="screen-header-left">
+                        <div class="screen-header-button close"></div>
+                        <div class="screen-header-button maximize"></div>
+                        <div class="screen-header-button minimize"></div>
+                      </div>
+                      <div class="screen-header-right">
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                        <div class="screen-header-ellipsis"></div>
+                      </div>
+                    </div>
+                    <div class="screen-body">
+                      <div class="screen-body-item left">
+                        <div class="app-title">
+                          <span>CONTACT</span>
+                          <span>US</span>
+                        </div>
+                        <div class="app-contact"></div>
+                      </div>
+                      <div class="screen-body-item">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                          <input type="hidden" name="access_key" value="e2b68bfa-59b6-41c2-92e1-308154351642">
+                        <div class="app-form">
+                          <div class="app-form-group">
+                            <input type="text" name="name" class="app-form-control" placeholder="NAME">
+                          </div>
+                          <div class="app-form-group">
+                            <input type="email" name="email" class="app-form-control" placeholder="EMAIL">
+                          </div>
+                          <textarea  name="message" class="app-form-control" placeholder="MESSAGE"></textarea>
+                        </form>
+                          <div class="app-form-group buttons">
+                            <button type="submit" class="app-form-button">SEND</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="">
+                <div class="row container-2">
+                    <div class="col-lg-3 col-md-6">
+                    <img style="height: 8.4vw;" src="./images/logo.png" alt="">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <a href="/contact.html"><h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3></a>
+                        <h6 style="margin-bottom: 1.2rem;text-transform: uppercase;">KA-24 , JTM MALL, JAIPUR -302017</h6>
+                        <h6 style="margin-bottom: 1.2rem;">+91 8209190461</h6>
+                        <h6 style="margin-bottom: 1.2rem;">info@recell.in</h6>
+                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                       <form id="email-form" action="https://api.web3forms.com/submit" name="email-form" data-name="Email Form"      method="post" class="form" aria-label="Email Form">
+                        <input type="hidden" name="access_key" value="e2b68bfa-59b6-41c2-92e1-308154351642">
+                        <input class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email address" type="email" id="email-2" required="">
+                        <input type="submit" class="submit-button w-button" value="Submit">
+                       </form>
+                    </div>
+                </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Links</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="/index.html">About Us</a></li>
+                                <li><a href="#">Our Process</a></li>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Newsroom</a></li>
+                                <li><a href="/contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                            <ul class="list-unstyled f_list">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="/terms-and-conditions.html">Term &amp; conditions</a></li>
+                                <li><a href="#">Reporting</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Support Policy</a></li>
+                                <li><a href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                            <h3 class="f-title f_600 t_color f_size_18 f-title-socials">Connect with us</h3>
+                            <div class="f_social_icon">
+                                <div>
+                                    <a href="https://www.linkedin.com/company/inrecell/" class="fab fa-facebook"><i class='bx bxl-linkedin'></i></a>
+                                    <span>Linkedin</span>
+                                </div>
+    
+                                <div>
+                                    <a href="https://www.instagram.com/inrecell?igsh=MXN6dDgzYTdiazF4bQ==" class="fab fa-twitter"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+                                    <span>Instagram</span>
+                                </div>
+    
+                                <div>
+                                    <a href="https://twitter.com/InRecell" class="fab fa-twitter"><i class='bx bxl-twitter'></i></i></a>
+                                    <span>Twitter</span>
+                                </div>
+    
+                                <div>
+                                    <a href="mailto:info@recell.in" class="fab fa-pinterest"><i class='bx bx-envelope'></i></a>
+                                    <span>Email</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div> -->
+        </div>
+    </footer>
+    </div>
+  </body>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64d3dd9edfb41666c35b15b7" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+            <script src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/js/webflow.813c6e567.js" type="text/javascript"></script>
+            <script src="https://cdn.jsdelivr.net/gh/Newsroom-freight/lenis@1/bundled/lenis.min.js"></script>
+            <script>
+                "use strict";
+                // fix lenis in safari
+
+                if (Webflow.env("editor") === undefined) {
+                    const lenis = new Lenis({
+                        lerp: 0.1,
+                        wheelMultiplier: 0.7,
+                        infinite: false,
+                        gestureOrientation: "vertical",
+                        normalizeWheel: false,
+                        smoothTouch: false
+                    });
+
+                    function raf(time) {
+                        lenis.raf(time);
+                        requestAnimationFrame(raf);
+                    }
+                    requestAnimationFrame(raf);
+
+                    $("[data-lenis-start]").on("click", function() {
+                        lenis.start();
+                    });
+                    $("[data-lenis-stop]").on("click", function() {
+                        lenis.stop();
+                    });
+                    $("[data-lenis-toggle]").on("click", function() {
+                        $(this).toggleClass("stop-scroll");
+                        if ($(this).hasClass("stop-scroll")) {
+                            lenis.stop();
+                        } else {
+                            lenis.start();
+                        }
+                    });
+
+                    function connectToScrollTrigger() {
+                        lenis.on("scroll", ScrollTrigger.update);
+                        gsap.ticker.add((time)=>{
+                            lenis.raf(time * 1000);
+                        }
+                        );
+                    }
+                    // Uncomment this if using GSAP ScrollTrigger
+                    // connectToScrollTrigger();
+                }
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+            <script>
+                $(".slider-main_component").each(function(index) {
+                    let loopMode = false;
+                    if ($(this).attr("loop-mode") === "true") {
+                        loopMode = true;
+                    }
+                    let sliderDuration = 500;
+                    if ($(this).attr("slider-duration") !== undefined) {
+                        sliderDuration = +$(this).attr("slider-duration");
+                    }
+                    const swiper = new Swiper($(this).find(".swiper")[0],{
+                        speed: sliderDuration,
+                        loop: loopMode,
+                        autoHeight: false,
+                        centeredSlides: loopMode,
+                        followFinger: true,
+                        freeMode: true,
+                        slideToClickedSlide: false,
+                        slidesPerView: 1.5,
+                        spaceBetween: "10%",
+                        rewind: false,
+                        mousewheel: {
+                            forceToAxis: true
+                        },
+                        keyboard: {
+                            enabled: true,
+                            onlyInViewport: true
+                        },
+                        breakpoints: {
+                            // mobile landscape
+                            480: {
+                                slidesPerView: 1.5,
+                                spaceBetween: "10%"
+                            },
+                            // tablet
+                            768: {
+                                slidesPerView: 2.5,
+                                spaceBetween: "10%"
+                            },
+                            // desktop
+                            992: {
+                                slidesPerView: 3.5,
+                                spaceBetween: "10%"
+                            }
+                        },
+                        pagination: {
+                            el: $(this).find(".swiper-bullet-wrapper")[0],
+                            bulletActiveClass: "is-active",
+                            bulletClass: "swiper-bullet",
+                            bulletElement: "button",
+                            clickable: true
+                        },
+                        navigation: {
+                            nextEl: $(this).find(".swiper-next")[0],
+                            prevEl: $(this).find(".swiper-prev")[0],
+                            disabledClass: "is-disabled"
+                        },
+                        scrollbar: {
+                            el: $(this).find(".swiper-drag-wrapper")[0],
+                            draggable: true,
+                            dragClass: "swiper-drag",
+                            snapOnRelease: true
+                        },
+                        slideActiveClass: "is-active",
+                        slideDuplicateActiveClass: "is-active"
+                    });
+                });
+
+                // --------------Slider--------------
+                let slider = document.querySelector('.slider .list');
+                let items = document.querySelectorAll('.slider .list .item');
+                let next = document.getElementById('next');
+                let prev = document.getElementById('prev');
+                let dots = document.querySelectorAll('.slider .dots li');
+                
+                let lengthItems = items.length - 1;
+                let active = 0;
+                next.onclick = function(){
+                    active = active + 1 <= lengthItems ? active + 1 : 0;
+                    reloadSlider();
+                }
+                prev.onclick = function(){
+                    active = active - 1 >= 0 ? active - 1 : lengthItems;
+                    reloadSlider();
+                }
+                let refreshInterval = setInterval(()=> {next.click()}, 3000);
+                function reloadSlider(){
+                    slider.style.left = -items[active].offsetLeft + 'px';
+                    // 
+                    let last_active_dot = document.querySelector('.slider .dots li.active');
+                    last_active_dot.classList.remove('active');
+                    dots[active].classList.add('active');
+                
+                    clearInterval(refreshInterval);
+                    refreshInterval = setInterval(()=> {next.click()}, 3000);
+                
+                    
+                }
+                
+                dots.forEach((li, key) => {
+                    li.addEventListener('click', ()=>{
+                         active = key;
+                         reloadSlider();
+                    })
+                })
+                window.onresize = function(event) {
+                    reloadSlider();
+                };
+            </script>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<title>Blog Page</title>
+<link rel="shortcut icon" href="images/padimpact-logo.png" type="image/x-icon">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- Main CSS -->
+<link href="css/main.css" rel="stylesheet"/>
+<style>
+	.navbar{
+		color: black;
+		margin-left: 6rem;
+	}
+	.navbar a{
+		margin-bottom: 6rem;
+		color: #000;
+	}
+	.mini-navbar ul{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin:2rem 0;
+	}
+	.mini-navbar ul li{
+		list-style: none;
+		margin: 1rem;
+		font-size: 1.2rem;
+		padding: .2rem .8rem;
+		border-radius: 8px;
+		cursor: pointer;
+		color: #fff;
+	}
+	.mini-navbar .active{
+		border: 1px solid #fff;
+		color: #00BF63!important;
+	}
+	@media(max-width:500px){
+		.mini-navbar{
+			margin-top: 2rem;
+		}
+        .mini-navbar ul{
+	    	margin: .6rem 0;
+	    }
+	    .mini-navbar ul li{
+	    	margin: 0rem;
+	    	font-size: 1rem;
+	    	padding: .1rem;
+	    	border-radius: 8px;
+			padding: 8px;
+	    }
+	}
+</style>
+<!-- <link rel="stylesheet" href="./css/style.css"> -->
+<link rel="stylesheet" href="css/style.css">
+<style>
+	p {
+      color: #fff;
+    }
+	li {
+      color: #ccc;
+    } 
+    .center-align{
+      display: flex;
+      align-items: center;
+	justify-content: center;
+	margin-left: 7vh;
+	margin-right: -7vh;
+     }
+     @media(max-width:900px){
+	.center-align{
+	    margin-left: 0vh;
+	    margin-right: 0vh;
+	  }
+	}
+		.container-2{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100vw!important;
+		/* overflow: hidden; */
+		margin-left: -4vw;
+	}
+	@media(max-width:760px){
+		.container-2{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+		width: 100vw!important;
+		/* overflow: hidden; */
+		margin-left: 4vw;
+	   }
+	}
+</style>
+</head>
+<body>
+
+
+<!--------Navbar------>
+
+<div data-animation="default" class="header w-nav" data-easing2="ease-in" fs-scrolldisable-element="smart-nav" data-easing="ease-out" data-collapse="small" data-w-id="489064cb-9577-b618-a8e4-54da4629fd67" role="banner" data-duration="400">
+	<div class="header_container"><a href="/" aria-current="page" class="header_logo-link w-nav-brand w--current" aria-label="home"><img src="./images/logo.png" loading="lazy" class="header_logo" style=""></a>
+		<nav role="navigation" class="header_menu w-nav-menu" style="transform: translateY(0px) translateX(0px);">
+			<a href="/Home" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Home</div></a>
+			<a href="/Newsroom" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">About Us</div></a>  
+			<a href="/Newsroom" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Our Process</div></a>        
+			<a href="/Newsroom" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Products</div></a>        
+			<a href="/Newsroom" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Newsroom</div></a>
+			<a href="/contact" class="header_link reveal-circle w-inline-block"><div class="header_link_dot"></div><div class="header_link_text">Contact Us</div></a>
+		</nav>
+	<div fs-scrolldisable-element="toggle" class="header_menu-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false"><div class="menu_link" style=""><div class="menu-icon"><div class="menu-icon_line-top" style=""></div><div class="menu-icon_line-bottom" style=""></div></div><div class="menu_link_text" style="">Menu</div></div></div></div><div class="header_overlay" style=""></div><div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0" style="display: none;"></div></div>
+</div>
+
+<div class="mini-navbar">
+	<ul>
+		<a href="#all"><li class="active">All</li></a>
+		<li id="#news">In the News</li>
+		<li id="#events">Events</li>
+		<li id="#blogs">Blogs</li>
+		<li id="#release">Press Release</li>
+	</ul>
+</div>
+
+<!-- -------------- -->
+
+<div class="container mt-5 mb-5">
+	<div class="row">
+		<div class="col-md-8">
+			<h5 id="#all" class="font-weight-bold spanborder"><span>Featured</span></h5>
+			<div class="card border-0 mb-5 box-shadow">
+				<div style="background-image: url(./images/demo-image.jpg); height: 350px; background-size: cover; background-repeat: no-repeat;">
+				</div>
+				<div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+					<h2 class="h2 font-weight-bold">
+					<a class="text-dark" href="./article.html">Transforming Menstrual Waste: The Environmental Impact of Pad Incineration</h2>
+					<p class="card-text">
+						 Researchers have found an effective target in the brain for electrical stimulation to improve mood in people suffering from depression.
+					</p>
+					<div>
+						<small class="d-block"><a class="text-muted" href="./author.html">Favid Rick</a></small>
+						<small class="text-muted">Dec 12 · 5 min read</small>
+					</div>
+				</div>
+			</div>
+			<!-- -------------------------------- -->
+			<h5 class="font-weight-bold spanborder"><span>In the News</span></h5>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Breaking Taboos: Redefining Menstrual Waste Management with Pad Incineration</a>
+					</h2>
+					<p>
+						 There are more coral species lurking in the deep ocean that previously thought.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/blog8.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Subscription Models for Menstrual Hygiene: A Hassle-Free Solution with Pad Impact</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/1.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Mastering Industrial-Scale Operations: The Efficiency of Pad Impact's 'Master' Machine</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/5.jpg">
+			</div>
+			<!-- -------------------------------- -->
+			<h5 class="font-weight-bold spanborder"><span>Events</span></h5>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Breaking Taboos: Redefining Menstrual Waste Management with Pad Incineration</a>
+					</h2>
+					<p>
+						 There are more coral species lurking in the deep ocean that previously thought.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/blog8.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Subscription Models for Menstrual Hygiene: A Hassle-Free Solution with Pad Impact</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/1.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Mastering Industrial-Scale Operations: The Efficiency of Pad Impact's 'Master' Machine</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/5.jpg">
+			</div>
+			<!-- -------------------------------- -->
+			<h5 class="font-weight-bold spanborder"><span>Blogs</span></h5>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Breaking Taboos: Redefining Menstrual Waste Management with Pad Incineration</a>
+					</h2>
+					<p>
+						 There are more coral species lurking in the deep ocean that previously thought.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/blog8.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Subscription Models for Menstrual Hygiene: A Hassle-Free Solution with Pad Impact</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/1.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Mastering Industrial-Scale Operations: The Efficiency of Pad Impact's 'Master' Machine</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/5.jpg">
+			</div>
+			<!-- -------------------------------- -->
+			<h5 class="font-weight-bold spanborder"><span>Press Release</span></h5>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Breaking Taboos: Redefining Menstrual Waste Management with Pad Incineration</a>
+					</h2>
+					<p>
+						 There are more coral species lurking in the deep ocean that previously thought.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/blog8.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Subscription Models for Menstrual Hygiene: A Hassle-Free Solution with Pad Impact</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/1.jpg">
+			</div>
+			<div class="mb-3 d-flex justify-content-between">
+				<div class="pr-3">
+					<h2 class="mb-1 h4 font-weight-bold">
+					<a class="text-dark" href="./article.html">Mastering Industrial-Scale Operations: The Efficiency of Pad Impact's 'Master' Machine</a>
+					</h2>
+					<p>
+						 Nasa says it has detected the first signs of significant melting in a swathe of glaciers in East Antarctica.
+					</p>
+					<div class="card-text text-muted small">
+						 Jake Bittle in SCIENCE
+					</div>
+					<small class="text-muted">Dec 12 · 5 min read</small>
+				</div>
+				<img height="120" src="./assets/img/demo/5.jpg">
+			</div>
+		</div>
+		<!-- -------------------------------- -->
+		<div class="col-md-4 pl-4">
+			<div class="sticky-top">
+				<h5 class="font-weight-bold spanborder"><span>Popular</span></h5>
+				<ol class="list-featured">
+					<li>
+					<span>
+					<h6 class="font-weight-bold">
+					<a href="./article.html" class="text-dark">Safe and Sustainable: The Engineering Marvels of Home-Use Incinerators</a>
+					</h6>
+					<p class="text-muted">
+						 Jake Bittle in SCIENCE
+					</p>
+					</span>
+					</li>
+					<li>
+					<span>
+					<h6 class="font-weight-bold">
+					<a href="./article.html" class="text-dark">Innovations in Menstrual Hygiene Management: A Closer Look at the Padcinerator</a>
+					</h6>
+					<p class="text-muted">
+						 Jake Bittle in SCIENCE
+					</p>
+					</span>
+					</li>
+					<li>
+					<span>
+					<h6 class="font-weight-bold">
+					<a href="./article.html" class="text-dark">Beyond Disposal: Exploring the Multi-dimensional Benefits of Pad Incineration</a>
+					</h6>
+					<p class="text-muted">
+						 Jake Bittle in SCIENCE
+					</p>
+					</span>
+					</li>
+					<li>
+					<span>
+					<h6 class="font-weight-bold">
+					<a href="./article.html" class="text-dark">The Science Behind Smokeless Burning: How Catalytic Converters Revolutionize Incineration</a>
+					</h6>
+					<p class="text-muted">
+						 Jake Bittle in SCIENCE
+					</p>
+					</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- End Main -->
+    
+<!--------------------------------------
+FOOTER
+--------------------------------------->
+
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div>
+            <div class="row container-2 center-align">
+                <div class="footer-section footer-section-1">
+                    <img style="height: 8.4vw;" src="./images/logo.png" alt="">
+                    <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                        <a href="/contact.html"><h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3></a>
+                        <h6 style="margin-bottom: 1.2rem;text-transform: uppercase;">KA-24 , JTM MALL, JAIPUR -302017</h6>
+                        <h6 style="margin-bottom: 1.2rem;">+91 8209190461</h6>
+                        <h6 style="margin-bottom: 1.2rem;">info@recell.in</h6>
+                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                       <form id="email-form" action="https://api.web3forms.com/submit" name="email-form" data-name="Email Form"      method="post" class="form" aria-label="Email Form">
+                        <input type="hidden" name="access_key" value="e2b68bfa-59b6-41c2-92e1-308154351642">
+                        <input class="text-field w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Email address" type="email" id="email-2" required="">
+                        <input type="submit" class="submit-button w-button" value="Submit">
+                       </form>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Links</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/index.html">About Us</a></li>
+                            <li><a href="#">Our Process</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="/contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="/terms-and-conditions.html">Term &amp; conditions</a></li>
+                            <li><a href="#">Reporting</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Support Policy</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                        <h3 class="f-title f_600 t_color f_size_18 f-title-socials">Connect with us</h3>
+                       <div class="f_social_icon">
+                            <div>
+                                <a href="https://www.linkedin.com/company/inrecell/" class="fab fa-facebook"><i class='bx bxl-linkedin'></i></a>
+                                <span>Linkedin</span>
+                            </div>
+
+                            <div>
+                                <a href="https://www.instagram.com/inrecell?igsh=MXN6dDgzYTdiazF4bQ==" class="fab fa-twitter"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+                                <span>Instagram</span>
+                            </div>
+
+                            <div>
+                                <a href="https://twitter.com/InRecell" class="fab fa-twitter"><i class='bx bxl-twitter'></i></i></a>
+                                <span>Twitter</span>
+                            </div>
+
+                            <div>
+                                <a href="mailto:info@recell.in" class="fab fa-pinterest"><i class='bx bx-envelope'></i></a>
+                                <span>Email</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+<!--------------------------------------
+JAVASCRIPTS
+--------------------------------------->
+<script src="./assets/js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/functions.js" type="text/javascript"></script>
+</body>
+</html>
